@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style_moche.css" rel="stylesheet">    
+    <title>Alexandre DHORNE - Portfolio</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <nav class="nav">
+                <a href="" class="nav-item">
+                    <span class="nav-text">Alexandre</span>
+                </a>
+                <a href="#work" class="nav-item">
+                    <span class="nav-text">Projets</span>
+                </a>
+                <a href="#skills" class="nav-item">
+                    <span class="nav-text">A propos</span>
+                </a>
+                <a href="#contact" class="nav-item">
+                    <span class="nav-text">Contact</span>
+                </a>
+            </nav>
+        </div>
+        <div class="sidebar-bottom">
+            <a href="#" class="social-link" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </a>
+            <a href="#" class="social-link" title="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <a href="#" class="social-link" title="Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-10 5L2 7"></path>
+                </svg>
+            </a>
+        </div>
+    </aside>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-blob blob-1"></div>
+            <div class="hero-blob blob-2"></div>
+            <div class="hero-content">
+                <h1>Alexandre DHORNE</h1>
+                <p class="hero-subtitle">Full Stack Developer & Creative Developer. Spécialisée dans la création d'interfaces modernes et de solutions web performantes.</p>
+                <button class="btn btn-primary">
+                    Voir mon travail
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="section-content">
+                <h2>À propos</h2>
+                <div class="about-text">
+                    <p>Passionnée par la création d'expériences numériques exceptionnelles, j'allie design et développement pour créer des produits qui marquent.</p>
+                    <p>Avec plus de 5 ans d'expérience en développement web, j'ai travaillé sur des projets variés, des startups aux grandes entreprises, en utilisant les technologies les plus modernes.</p>
+                    <p>Je crois en l'importance de l'accessibilité, des performances et d'une excellente expérience utilisateur dans chaque projet que j'entreprends.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK SECTION -->
+        <section id="work">
+            <div class="section-content">
+                <h2>Projets</h2>
+                <div class="projects-container">
+                    <div class="projects-list">
+                        <div class="project-item active" onclick="selectProject(this, 0)">
+                            <h3 class="project-title">
+                                Design System
+                                <span class="arrow">→</span>
+                            </h3>
+                            <p class="project-desc">Librairie de composants réutilisables avec documentation complète</p>
+                        </div>
+                        <div class="project-item" onclick="selectProject(this, 1)">
+                            <h3 class="project-title">
+                                E-commerce Platform
+                                <span class="arrow">→</span>
+                            </h3>
+                            <p class="project-desc">Plateforme de vente en ligne avec paiement intégré</p>
+                        </div>
+                        <div class="project-item" onclick="selectProject(this, 2)">
+                            <h3 class="project-title">
+                                Analytics Dashboard
+                                <span class="arrow">→</span>
+                            </h3>
+                            <p class="project-desc">Dashboard de visualisation de données en temps réel</p>
+                        </div>
+                        <div class="project-item" onclick="selectProject(this, 3)">
+                            <h3 class="project-title">
+                                Mobile App
+                                <span class="arrow">→</span>
+                            </h3>
+                            <p class="project-desc">Application mobile de gestion de tâches</p>
+                        </div>
+                    </div>
+                    <div class="project-preview">
+                        <div class="project-preview-content" id="projectPreview">
+                            <div>Design System</div>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">Storybook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <div class="section-content">
+                <h2>Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">React</div>
+                    <div class="skill-card">TypeScript</div>
+                    <div class="skill-card">Next.js</div>
+                    <div class="skill-card">Tailwind CSS</div>
+                    <div class="skill-card">Node.js</div>
+                    <div class="skill-card">Python</div>
+                    <div class="skill-card">PostgreSQL</div>
+                    <div class="skill-card">AWS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div class="contact-content">
+                <h2>Me contacter</h2>
+                <p class="contact-subtitle">Vous avez un projet intéressant? N'hésitez pas à me contacter!</p>
+                <div class="contact-buttons">
+                    <a href="mailto:hello@sarahdesigner.com" class="btn btn-primary">
+                        Envoyez-moi un email
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-10 5L2 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#" title="GitHub">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="#" title="LinkedIn">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" title="Email">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-10 5L2 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2024 Sarah Designer. Tous droits réservés.</p>
+        </footer>
+    </main>
+
+    <script>
+        const projects = [
+            {
+                title: 'Design System',
+                tags: ['React', 'Tailwind', 'Storybook']
+            },
+            {
+                title: 'E-commerce Platform',
+                tags: ['Next.js', 'Stripe', 'PostgreSQL']
+            },
+            {
+                title: 'Analytics Dashboard',
+                tags: ['React', 'Chart.js', 'WebSocket']
+            },
+            {
+                title: 'Mobile App',
+                tags: ['React Native', 'Firebase', 'Redux']
+            }
+        ];
+
+        function selectProject(element, index) {
+            // Retirer la classe active de tous les items
+            document.querySelectorAll('.project-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Ajouter la classe active à l'élément cliqué
+            element.classList.add('active');
+            
+            // Mettre à jour l'aperçu
+            const preview = document.getElementById('projectPreview');
+            const project = projects[index];
+            preview.innerHTML = `
+                <div>${project.title}</div>
+                <div class="project-tags">
+                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

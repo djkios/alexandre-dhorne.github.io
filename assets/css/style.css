@@ -1,0 +1,37 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #8806d4;
+            --secondary: #b60ee9;
+            --dark: #020202;
+            --darker: #0f0f0f;
+            --light: #e2e8f0;
+            --light-dark: #1e293b;
+            --border: #475569;
+        }
+
+        @font-face{
+            font-family: 'Sakire';
+            src: url('fonts/Sakire.tff') format('truetype');
+        }
+
+        @font-face{
+            font-family: 'ClashDisplay';
+            src: url('fonts/ClashDisplay.ttf') format('truetype');
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            background: var(--dark);
+        }
+
+        .wtm {
+
+        }
