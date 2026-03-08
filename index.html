@@ -1,19 +1,242 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/style.css" rel="stylesheet">    
-    <title>Alexandre DHORNE - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alexandre DHORNE — Design Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="/assets/css/style.css"rel="stylesheet" />
+
 </head>
 <body>
 
-    <div class="welcome">
-        <p class="wtm">Bienvenue sur mon</p>
-        <h1 class="portfolio">Portfolio</h1>
-    </div>
-    <main>
-    </main>
+  <section class="hero">
 
-    </body>
+    <h1>
+      <span class="hero-intro">mon nom est</span>
+      <span class="hero-name"><em>Alexandre</em> Dhorne.</span>
+    </h1>
+
+    <div class="hero-tagline">
+      <p>
+        <span class="asterisk">*</span>
+        Je suis un développeur Junior Fullstack.<br>
+        Adore créer des produits de <strong>bonne qualité</strong>.<br>
+        <!-- And I have excellent <strong>teamwork abilities</strong>,<br>
+        and <strong>strong</strong> time management skills. -->
+      </p>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      scroll
+    </div>
+
+    <div class="hero-footer">
+      <div>Alexandre DHORNE<br>dhornealexandre@gmail.com</div>
+      <div class="center">( Fullstack Developer )</div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section>
+    <p class="section-label reveal">01 — À propos de moi</p>
+    <div class="about-grid">
+      <div class="about-heading reveal">
+        Construire des <em>solutions web</em> performantes et intuitives.
+      </div>
+      <div class="about-body reveal">
+        <p>
+          Passionné par la création de produits numériques de qualité, je développe des applications web modernes et fonctionnelles. Mon travail allie l'architecture solide et l'expérience utilisateur fluide.
+        </p>
+        <p>
+          En parcours BTS SIO, j'acquiers une expertise fullstack en mettant en pratique les meilleures pratiques de développement — que ce soit en frontend réactif, backend robuste, ou architecture base de données.
+        </p>
+        <div class="skills">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">HTML5 / CSS3</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">API REST</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WORKS ═══ -->
+  <section>
+    <div class="works-header reveal">
+      <h2 class="works-title">Projets faits </h2>
+      <span class="works-count">03 projets</span>
+    </div>
+
+    <div class="works-grid">
+      <!-- Project 1 — featured -->
+      <div class="work-item reveal">
+        
+        <div class="work-placeholder fill-1">
+          <a href="html/greta.html"></a>
+          <img src="/assets/img/greta_1.png" alt="Project 1" style="width: auto; height: auto; object-fit: cover;"/>
+        </div>
+        <span class="work-num">01</span>
+        <div class="work-inner">
+          <div>
+            <div class="work-cat">Full Stack</div>
+            <div class="work-title">Gestion d'élèves - Greta</div>
+          </div>
+          <div class="work-cat">2026</div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="work-item reveal">
+        <div class="work-placeholder fill-2">
+          <a href="html/portfolio.html"></a>
+          <img src="/assets/img/portfolio.png" alt="Project 2" style="width: auto; height: auto; object-fit: cover;"/>
+        </div>
+        <span class="work-num">02</span>
+        <div class="work-inner">
+          <div>
+            <div class="work-cat">Frontend</div>
+            <div class="work-title">Portfolio Personnel</div>
+          </div>
+          <div class="work-cat">2026</div>
+        </div>
+      </div>
+
+<!--       
+      <div class="work-item reveal">
+        <div class="work-placeholder fill-3">
+          <svg class="geo" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="80" stroke="white" stroke-width="0.8"/>
+            <circle cx="100" cy="100" r="50" stroke="white" stroke-width="0.5"/>
+            <circle cx="100" cy="100" r="20" stroke="white" stroke-width="0.5"/>
+          </svg>
+        </div>
+        <span class="work-num">03</span>
+        <div class="work-inner">
+          <div>
+            <div class="work-cat">Backend</div>
+            <div class="work-title">Gestion de Stocks</div>
+          </div>
+          <div class="work-cat">2024</div>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="work-placeholder fill-4">
+          <svg class="geo" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40" y="40" width="120" height="120" stroke="white" stroke-width="0.8" transform="rotate(45 100 100)"/>
+            <rect x="60" y="60" width="80" height="80" stroke="white" stroke-width="0.5"/>
+          </svg>
+        </div>
+        <span class="work-num">04</span>
+        <div class="work-inner">
+          <div>
+            <div class="work-cat">Mobile</div>
+            <div class="work-title">App Météo Interactive</div>
+          </div>
+          <div class="work-cat">2024</div>
+        </div>
+      </div>
+
+      <div class="work-item reveal" style="grid-column: span 2; aspect-ratio: 16/7;">
+        <div class="work-placeholder fill-5">
+          <svg class="geo" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="100" x2="400" y2="100" stroke="white" stroke-width="0.5"/>
+            <line x1="200" y1="0" x2="200" y2="200" stroke="white" stroke-width="0.5"/>
+            <ellipse cx="200" cy="100" rx="150" ry="80" stroke="white" stroke-width="0.8"/>
+            <ellipse cx="200" cy="100" rx="80" ry="40" stroke="white" stroke-width="0.5"/>
+          </svg>
+        </div>
+        <span class="work-num">05</span>
+        <div class="work-inner">
+          <div>
+            <div class="work-cat">Database</div>
+            <div class="work-title">Système CRM Entreprise</div>
+          </div>
+          <div class="work-cat">2024</div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section>
+    <p class="section-label reveal">03 — Contact</p>
+    <div class="contact-inner">
+      <div class="contact-heading reveal">
+        Créons ensemble quelque chose de <em>remarquable</em>.
+      </div>
+      <ul class="contact-links reveal">
+        <li>
+          <a href="mailto:dhornealexandre@gmail.com">
+            Email
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com" target="_blank">
+            GitHub
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            LinkedIn
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Instagram
+            <span class="arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div>© 2026 Alexandre DHORNE</div>
+    <div class="mid">Fullstack Developer</div>
+  </footer>
+
+  <script>
+    // Custom cursor
+    // const cursor = document.getElementById('cursor');
+    // const ring = document.getElementById('cursorRing');
+    // let mx = 0, my = 0, rx = 0, ry = 0;
+    // document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    // function animCursor() {
+    //   cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+    //   rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+    //   ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+    //   requestAnimationFrame(animCursor);
+    // }
+    // animCursor();
+
+    // document.querySelectorAll('a, button, .work-item, .skill-tag').forEach(el => {
+    //   el.addEventListener('mouseenter', () => {
+    //     cursor.style.width = '16px'; cursor.style.height = '16px';
+    //     cursor.style.background = 'transparent';
+    //     cursor.style.border = '1px solid var(--white)';
+    //     ring.style.width = '60px'; ring.style.height = '60px';
+    //   });
+    //   el.addEventListener('mouseleave', () => {
+    //     cursor.style.width = '8px'; cursor.style.height = '8px';
+    //     cursor.style.background = 'var(--white)';
+    //     cursor.style.border = 'none';
+    //     ring.style.width = '36px'; ring.style.height = '36px';
+    //   });
+    // });
+
+    // Scroll reveal handled by CSS animation-timeline: view()
+  </script>
+</body>
 </html>
